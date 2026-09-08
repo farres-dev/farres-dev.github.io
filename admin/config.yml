@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: fns73/fns73.github.io
+  repo: farres-dev/farres-dev.github.io
   branch: main
 
 media_folder: "assets/images"

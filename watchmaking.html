@@ -1,0 +1,39 @@
+---
+layout: default
+title: Watchmaking
+description: Mechanical watch servicing, restoration, and builds by Fares Shehadeh.
+---
+
+<section class="page-header">
+  <p class="page-eyebrow">03</p>
+  <h1>Watchmaking</h1>
+  <p class="page-sub">Servicing, restoration, and the craft of the mechanical movement.</p>
+</section>
+
+<section class="photo-albums">
+  {% for piece in site.watchmaking %}
+  <div class="album">
+    <h2 class="album-title">{{ piece.title }}</h2>
+    {% if piece.description %}<p class="album-desc">{{ piece.description }}</p>{% endif %}
+    {% if piece.specs %}
+    <ul class="watch-specs">
+      {% for spec in piece.specs %}
+      <li><span>{{ spec[0] }}</span> {{ spec[1] }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="photo-grid">
+      {% for photo in piece.photos %}
+      <div class="photo-item" data-src="{{ photo.src }}" data-caption="{{ photo.caption }}">
+        <img src="{{ photo.src }}" alt="{{ photo.caption }}" loading="lazy">
+        {% if photo.caption %}<p class="photo-caption">{{ photo.caption }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if site.watchmaking.size == 0 %}
+  <p class="empty-state">Projects coming soon.</p>
+  {% endif %}
+</section>

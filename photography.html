@@ -1,0 +1,32 @@
+---
+layout: default
+title: Photography
+description: Photography by Fares Shehadeh — street, portrait, and travel.
+---
+
+<section class="page-header">
+  <p class="page-eyebrow">01</p>
+  <h1>Photography</h1>
+  <p class="page-sub">Shot on film and digital. Moments worth keeping.</p>
+</section>
+
+<section class="photo-albums">
+  {% for album in site.photography %}
+  <div class="album">
+    <h2 class="album-title">{{ album.title }}</h2>
+    {% if album.description %}<p class="album-desc">{{ album.description }}</p>{% endif %}
+    <div class="photo-grid">
+      {% for photo in album.photos %}
+      <div class="photo-item" data-src="{{ photo.src }}" data-caption="{{ photo.caption }}">
+        <img src="{{ photo.src }}" alt="{{ photo.caption }}" loading="lazy">
+        {% if photo.caption %}<p class="photo-caption">{{ photo.caption }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if site.photography.size == 0 %}
+  <p class="empty-state">Photos coming soon.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,22 @@
+title: Fares Shehadeh
+tagline: Trading systems · Photography · Watchmaking
+description: Builder, photographer, and craftsman based in the US.
+email: farresshehadeh@gmail.com
+url: "https://fns73.github.io"
+baseurl: ""
+
+collections:
+  builds:
+    output: false
+  photography:
+    output: false
+  watchmaking:
+    output: false
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

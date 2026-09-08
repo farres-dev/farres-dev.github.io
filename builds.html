@@ -1,0 +1,41 @@
+---
+layout: default
+title: Builds
+description: AI trading systems, Claude integrations, and applications built by Fares Shehadeh.
+---
+
+<section class="page-header">
+  <p class="page-eyebrow">02</p>
+  <h1>Builds</h1>
+  <p class="page-sub">LLM integrations, autonomous systems, and applications.</p>
+</section>
+
+<section class="builds-grid">
+  {% for build in site.builds %}
+  <article class="build-card">
+    {% if build.image %}
+    <div class="build-img" style="background-image: url('{{ build.image }}')"></div>
+    {% endif %}
+    <div class="build-body">
+      <div class="build-meta">
+        <span class="build-year">{{ build.year }}</span>
+        {% if build.status %}
+        <span class="build-status build-status--{{ build.status | downcase }}">{{ build.status }}</span>
+        {% endif %}
+      </div>
+      <h2>{{ build.title }}</h2>
+      <p>{{ build.description }}</p>
+      {% if build.tech %}
+      <div class="build-tech">
+        {% for t in build.tech %}
+        <span class="tech-tag">{{ t }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if build.link %}
+      <a href="{{ build.link }}" class="build-link" target="_blank" rel="noopener">View Project →</a>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>

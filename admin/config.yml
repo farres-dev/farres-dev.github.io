@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: fns73/fns73.github.io
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "builds"
+    label: "Builds"
+    folder: "_builds"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title",       name: "title",       widget: "string" }
+      - { label: "Description", name: "description",  widget: "text" }
+      - { label: "Year",        name: "year",         widget: "number" }
+      - { label: "Status",      name: "status",       widget: "select", options: ["Active", "Archived"] }
+      - { label: "Cover Image", name: "image",        widget: "image", required: false }
+      - { label: "Tech Stack",  name: "tech",         widget: "list", required: false }
+      - { label: "Link",        name: "link",         widget: "string", required: false }
+      - { label: "Sort Order",  name: "order",        widget: "number", required: false }
+
+  - name: "photography"
+    label: "Photography"
+    folder: "_photography"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Album Title",   name: "title",       widget: "string" }
+      - { label: "Description",   name: "description", widget: "text", required: false }
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "src",     widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string", required: false }
+
+  - name: "watchmaking"
+    label: "Watchmaking"
+    folder: "_watchmaking"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title",       name: "title",       widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - label: "Specs"
+        name: "specs"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Label", name: "0", widget: "string" }
+          - { label: "Value", name: "1", widget: "string" }
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        fields:
+          - { label: "Image",   name: "src",     widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string", required: false }

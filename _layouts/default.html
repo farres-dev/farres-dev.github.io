@@ -19,9 +19,10 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="{{ '/photography' | relative_url }}" {% if page.url contains 'photography' %}class="active"{% endif %}>Photography</a>
+      {% comment %} Photography & Watchmaking paused for now — remove these comment tags to restore. {% endcomment %}
+      {% comment %}<a href="{{ '/photography' | relative_url }}" {% if page.url contains 'photography' %}class="active"{% endif %}>Photography</a>{% endcomment %}
       <a href="{{ '/builds' | relative_url }}" {% if page.url contains 'builds' %}class="active"{% endif %}>Builds</a>
-      <a href="{{ '/watchmaking' | relative_url }}" {% if page.url contains 'watchmaking' %}class="active"{% endif %}>Watchmaking</a>
+      {% comment %}<a href="{{ '/watchmaking' | relative_url }}" {% if page.url contains 'watchmaking' %}class="active"{% endif %}>Watchmaking</a>{% endcomment %}
       <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
     </div>
   </nav>

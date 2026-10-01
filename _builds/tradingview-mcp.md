@@ -4,6 +4,6 @@ description: Model Context Protocol server that gives Claude direct control over
 tech: [MCP, Node.js, Chrome CDP, TradingView]
 year: 2025
 status: Active
-image: /assets/images/tradingview-mcp.jpg
+image: /assets/images/builds/tradingview-mcp/cover.svg
 order: 3
 ---

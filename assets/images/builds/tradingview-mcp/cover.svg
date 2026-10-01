@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="TradingView MCP server">
+  <rect width="800" height="600" fill="#0d0d0d"/>
+  <g stroke="#1b1b1b" stroke-width="1">
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+  </g>
+  <!-- chart line on the right (the TradingView chart) -->
+  <polyline points="430,430 500,380 560,400 620,320 690,340 760,250"
+    fill="none" stroke="#c9b99a" stroke-width="2.5" stroke-opacity="0.55"
+    stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- MCP connection: Claude node linked to chart nodes -->
+  <g stroke="#c9b99a" stroke-width="2" stroke-opacity="0.6">
+    <line x1="150" y1="300" x2="300" y2="220"/>
+    <line x1="150" y1="300" x2="300" y2="300"/>
+    <line x1="150" y1="300" x2="300" y2="380"/>
+    <line x1="300" y1="220" x2="430" y2="430"/>
+    <line x1="300" y1="300" x2="500" y2="380"/>
+    <line x1="300" y1="380" x2="620" y2="320"/>
+  </g>
+  <!-- nodes -->
+  <g fill="#0d0d0d" stroke="#c9b99a" stroke-width="2.5">
+    <circle cx="300" cy="220" r="9"/>
+    <circle cx="300" cy="300" r="9"/>
+    <circle cx="300" cy="380" r="9"/>
+  </g>
+  <!-- Claude hub node -->
+  <circle cx="150" cy="300" r="16" fill="#c9b99a"/>
+  <text x="150" y="340" font-family="'Inter',sans-serif" font-size="15" letter-spacing="2"
+    text-anchor="middle" fill="#888">CLAUDE</text>
+  <text x="70" y="545" font-family="'Inter',sans-serif" font-size="22" letter-spacing="3"
+    fill="#ede9e3" fill-opacity="0.9">MODEL CONTEXT PROTOCOL</text>
+</svg>

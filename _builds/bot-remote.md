@@ -4,6 +4,6 @@ description: Mobile-first control panel for the trading bot, accessible anywhere
 tech: [Python, Streamlit, Tailscale]
 year: 2026
 status: Active
-image: /assets/images/bot-remote.jpg
+image: /assets/images/builds/bot-remote/cover.svg
 order: 4
 ---

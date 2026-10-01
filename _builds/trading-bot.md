@@ -4,6 +4,6 @@ description: Fully autonomous AI trading system. Claude runs the morning scan, s
 tech: [Claude, Python, Robinhood API, TradingView MCP, Streamlit]
 year: 2026
 status: Active
-image: /assets/images/trading-bot.jpg
+image: /assets/images/builds/trading-bot/cover.svg
 order: 1
 ---

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Bot Remote mobile control">
+  <rect width="800" height="600" fill="#0d0d0d"/>
+  <!-- signal arcs -->
+  <g fill="none" stroke="#c9b99a" stroke-width="2" stroke-opacity="0.35" stroke-linecap="round">
+    <path d="M 540 210 A 120 120 0 0 1 540 390"/>
+    <path d="M 585 175 A 175 175 0 0 1 585 425"/>
+    <path d="M 630 140 A 230 230 0 0 1 630 460"/>
+  </g>
+  <!-- phone -->
+  <rect x="300" y="150" width="200" height="300" rx="26" fill="#141414" stroke="#c9b99a" stroke-width="2.5"/>
+  <rect x="320" y="185" width="160" height="40" rx="8" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1.5"/>
+  <circle cx="340" cy="205" r="7" fill="#c9b99a"/>
+  <text x="358" y="211" font-family="'Inter',sans-serif" font-size="14" fill="#888">bot online</text>
+  <!-- sliders -->
+  <g>
+    <rect x="320" y="255" width="160" height="6" rx="3" fill="#2a2a2a"/>
+    <circle cx="430" cy="258" r="10" fill="#c9b99a"/>
+    <rect x="320" y="300" width="160" height="6" rx="3" fill="#2a2a2a"/>
+    <circle cx="372" cy="303" r="10" fill="#c9b99a"/>
+  </g>
+  <!-- buttons -->
+  <rect x="320" y="345" width="74" height="40" rx="8" fill="#c9b99a"/>
+  <rect x="406" y="345" width="74" height="40" rx="8" fill="none" stroke="#c9b99a" stroke-width="2"/>
+  <text x="70" y="545" font-family="'Inter',sans-serif" font-size="22" letter-spacing="3"
+    fill="#ede9e3" fill-opacity="0.9">CONTROL FROM ANYWHERE</text>
+</svg>

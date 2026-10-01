@@ -1,6 +1,6 @@
 ---
 title: Travel
-description: Travel photography by Fares Shehadeh.
+description: Travel photography by Farres Shehadeh.
 order: 3
 photos:
 ---

@@ -1,6 +1,6 @@
 ---
 title: Automotive
-description: Automotive photography by Fares Shehadeh.
+description: Automotive photography by Farres Shehadeh.
 order: 4
 photos:
 ---

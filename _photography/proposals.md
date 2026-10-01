@@ -1,6 +1,6 @@
 ---
 title: Proposals
-description: Proposal photography by Fares Shehadeh.
+description: Proposal photography by Farres Shehadeh.
 order: 2
 photos:
 ---

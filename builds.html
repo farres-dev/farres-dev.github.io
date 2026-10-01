@@ -12,7 +12,7 @@ description: AI trading systems, Claude integrations, and applications built by 
 
 <section class="builds-grid">
   {% for build in site.builds %}
-  <article class="build-card">
+  <a class="build-card" href="{{ build.url | relative_url }}">
     {% if build.image %}
     <div class="build-img" style="background-image: url('{{ build.image }}')"></div>
     {% endif %}
@@ -32,10 +32,8 @@ description: AI trading systems, Claude integrations, and applications built by 
         {% endfor %}
       </div>
       {% endif %}
-      {% if build.link %}
-      <a href="{{ build.link }}" class="build-link" target="_blank" rel="noopener">View Project →</a>
-      {% endif %}
+      <span class="build-link">View Project →</span>
     </div>
-  </article>
+  </a>
   {% endfor %}
 </section>

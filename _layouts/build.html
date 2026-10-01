@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<section class="page-header">
+  <p class="page-eyebrow"><a href="{{ '/builds' | relative_url }}" class="back-link">← Builds</a></p>
+  <h1>{{ page.title }}</h1>
+  <div class="build-meta detail-meta">
+    <span class="build-year">{{ page.year }}</span>
+    {% if page.status %}
+    <span class="build-status build-status--{{ page.status | downcase }}">{{ page.status }}</span>
+    {% endif %}
+  </div>
+</section>
+
+{% if page.image %}
+<section class="build-detail-hero">
+  <div class="build-detail-img" style="background-image: url('{{ page.image }}')"></div>
+</section>
+{% endif %}
+
+<section class="build-detail">
+  <p class="build-lead">{{ page.description }}</p>
+
+  {% if page.tech %}
+  <div class="build-tech">
+    {% for t in page.tech %}
+    <span class="tech-tag">{{ t }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="build-content">
+    {{ content }}
+  </div>
+
+  {% if page.link %}
+  <a href="{{ page.link }}" class="btn-outline" target="_blank" rel="noopener">View on GitHub →</a>
+  {% endif %}
+</section>

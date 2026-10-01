@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: farres-dev/farres-dev.github.io
-  branch: main
+  branch: master
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
@@ -21,6 +21,7 @@ collections:
       - { label: "Tech Stack",  name: "tech",         widget: "list", required: false }
       - { label: "Link",        name: "link",         widget: "string", required: false }
       - { label: "Sort Order",  name: "order",        widget: "number", required: false }
+      - { label: "Write-up",    name: "body",         widget: "markdown", required: false }
 
   - name: "photography"
     label: "Photography"

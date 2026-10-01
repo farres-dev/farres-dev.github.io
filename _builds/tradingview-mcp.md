@@ -5,5 +5,5 @@ tech: [MCP, Node.js, Chrome CDP, TradingView]
 year: 2025
 status: Active
 image: /assets/images/tradingview-mcp.jpg
-order: 2
+order: 3
 ---

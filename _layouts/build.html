@@ -38,3 +38,15 @@ layout: default
   <a href="{{ page.link }}" class="btn-outline" target="_blank" rel="noopener">View on GitHub →</a>
   {% endif %}
 </section>
+
+{% if page.screenshots %}
+<section class="build-shots">
+  <h2>Screenshots</h2>
+  {% for s in page.screenshots %}
+  <figure>
+    <img src="{{ s.src | relative_url }}" alt="{{ s.caption }}" loading="lazy">
+    {% if s.caption %}<figcaption>{{ s.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</section>
+{% endif %}

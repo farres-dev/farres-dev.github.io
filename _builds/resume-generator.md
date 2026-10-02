@@ -7,6 +7,11 @@ year: 2026
 status: Active
 image: /assets/images/builds/resume-generator/cover.svg
 order: 5
+screenshots:
+  - src: /assets/images/builds/resume-generator/form-top.png
+    caption: The generator UI — header, summary, and experience fields
+  - src: /assets/images/builds/resume-generator/form-bottom.png
+    caption: Projects, skills, and education, with one-click .docx generation
 ---
 
 ## The idea

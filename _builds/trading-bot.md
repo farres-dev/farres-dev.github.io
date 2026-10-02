@@ -7,6 +7,15 @@ year: 2026
 status: Active
 image: /assets/images/builds/trading-bot/cover.svg
 order: 1
+screenshots:
+  - src: /assets/images/builds/trading-bot/dashboard.webp
+    caption: Live execution dashboard — performance, open positions, and Claude's ranked watchlist
+  - src: /assets/images/builds/trading-bot/watchlist.webp
+    caption: Scored watchlist with entries, stops, and targets, alongside the operations activity feed
+  - src: /assets/images/builds/trading-bot/run-details.webp
+    caption: Per-run detail — every candidate graded, with the reasoning behind each pass or skip
+  - src: /assets/images/builds/trading-bot/ask-the-bot.png
+    caption: Ask-the-bot panel for on-demand analysis, position checks, and manual trade execution
 ---
 
 ## The idea

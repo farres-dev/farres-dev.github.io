@@ -7,6 +7,16 @@ year: 2026
 status: Active
 image: /assets/images/builds/bot-remote/cover.svg
 order: 4
+shots_style: phone
+screenshots:
+  - src: /assets/images/builds/bot-remote/mobile-controls.webp
+    caption: Controls — start, stop, restart, run a scan, and switch strategy from your phone
+  - src: /assets/images/builds/bot-remote/mobile-positions.webp
+    caption: Open positions with entry, stop, and target
+  - src: /assets/images/builds/bot-remote/mobile-picks.webp
+    caption: Today's picks — bought positions plus the live watchlist
+  - src: /assets/images/builds/bot-remote/mobile-decision.webp
+    caption: Last decision — the bot's full entry-check reasoning
 ---
 
 ## The idea

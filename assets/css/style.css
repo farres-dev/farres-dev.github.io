@@ -346,3 +346,9 @@ p  { color: var(--text-muted); }
 .build-shots img { width: 100%; border: 1px solid var(--border); border-radius: 10px; display: block; }
 .build-shots figcaption { color: var(--text-muted); font-size: .85rem; margin-top: .6rem; }
 @media (max-width: 700px) { .build-shots { padding: 0 1.2rem; } }
+
+/* ── Phone-style screenshot gallery (tall mobile shots) ────────────────── */
+.build-shots.phone { display: flex; flex-wrap: wrap; gap: 1.8rem; justify-content: center; }
+.build-shots.phone figure { margin-bottom: 0; width: 240px; max-width: 46%; }
+.build-shots.phone img { border-radius: 20px; }
+.build-shots.phone figcaption { text-align: center; }

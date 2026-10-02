@@ -40,7 +40,7 @@ layout: default
 </section>
 
 {% if page.screenshots %}
-<section class="build-shots">
+<section class="build-shots{% if page.shots_style %} {{ page.shots_style }}{% endif %}">
   <h2>Screenshots</h2>
   {% for s in page.screenshots %}
   <figure>

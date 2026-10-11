@@ -9,14 +9,20 @@ image: /assets/images/builds/bot-remote/cover.svg
 order: 4
 shots_style: phone
 screenshots:
-  - src: /assets/images/builds/bot-remote/mobile-controls.webp
-    caption: Controls — start, stop, restart, run a scan, and switch strategy from your phone
-  - src: /assets/images/builds/bot-remote/mobile-positions.webp
-    caption: Open positions with entry, stop, and target
-  - src: /assets/images/builds/bot-remote/mobile-picks.webp
-    caption: Today's picks — bought positions plus the live watchlist
-  - src: /assets/images/builds/bot-remote/mobile-decision.webp
-    caption: Last decision — the bot's full entry-check reasoning
+  - src: /assets/images/builds/bot-remote/mobile-desk-controls.webp
+    caption: Desk controls — start, restart, scan, news, plus OG / PHD strategy mode and live system status
+  - src: /assets/images/builds/bot-remote/mobile-performance.webp
+    caption: Performance stats and open positions with entry, stop, and targets
+  - src: /assets/images/builds/bot-remote/mobile-live-news.webp
+    caption: Live news feed for the watchlist, pulled from Google, Yahoo, and SEC
+  - src: /assets/images/builds/bot-remote/mobile-activity-feed.webp
+    caption: Operations center — activity feed of every bot run, entry check, and exit check
+  - src: /assets/images/builds/bot-remote/mobile-run-details.webp
+    caption: Run details — expand any run to see the bot's full reasoning
+  - src: /assets/images/builds/bot-remote/mobile-console.webp
+    caption: Live console — tail the bot's log right from your phone
+  - src: /assets/images/builds/bot-remote/mobile-ask-the-bot.webp
+    caption: Ask the bot — query positions, request analysis, or place a trade in plain English
 ---
 
 ## The idea
@@ -29,7 +35,10 @@ being at my desk. So I built a phone-friendly control panel.
 - **Start, stop, and restart** the bot from your phone
 - Switch **strategy aggressiveness** on the fly
 - **Trigger a market scan** on demand
-- **Monitor open positions** and status in real time
+- **Monitor open positions**, win rate, and P&L in real time
+- Read the **activity feed and run details** to see why the bot made each call
+- **Ask the bot** questions or request analysis in plain English from the chat tab
+- Tail the **live console** and toggle OG / PHD strategy mode and crypto/auto modes
 
 ## How it's built
 
